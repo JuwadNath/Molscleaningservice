@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOLS Cleaning Services | Professional Cleaning in Bournemouth</title>
+<meta name="description" content="MOLS Cleaning Services provides residential, office, commercial, Airbnb, HMO, deep and end-of-tenancy cleaning in Bournemouth and surrounding areas.">
+<meta name="theme-color" content="#102b2a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink: #132b29;
+  --deep: #102b2a;
+  --green: #1d7563;
+  --mint: #dcebe4;
+  --cream: #f6f5ef;
+  --white: #ffffff;
+  --muted: #697773;
+  --line: #dfe5df;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { background: var(--cream); color: var(--ink); font-family: "DM Sans", Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+.site-header {
+  min-height: 86px; padding: 0 7.2%; display: flex; align-items: center;
+  justify-content: space-between; background: #fbfbf7; position: sticky;
+  top: 0; z-index: 100; border-bottom: 1px solid rgba(19,43,41,.08);
+}
+.brand { display: flex; align-items: center; gap: 11px; }
+.brand-mark {
+  height: 42px; width: 42px; background: var(--deep); color: white;
+  display: grid; place-items: center; font-family: "Playfair Display", serif; font-size: 25px;
+}
+.brand strong { display: block; letter-spacing: 2px; font-size: 16px; }
+.brand small { display: block; font-size: 8px; letter-spacing: 2.2px; margin-top: 3px; color: #64736e; }
+.desktop-nav { display: flex; gap: 35px; font-size: 12px; color: #43514d; }
+.desktop-nav a:hover { color: var(--green); }
+.header-contact { font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--green); padding: 11px 0; }
+.hero {
+  min-height: 660px; background: var(--deep); color: white; padding: 105px 7.2% 75px;
+  position: relative; overflow: hidden; display: grid; grid-template-columns: 1.1fr .9fr; align-items: center;
+}
+.hero-content { position: relative; z-index: 2; max-width: 650px; }
+.eyebrow, .section-kicker { font-size: 10px; letter-spacing: 2.6px; font-weight: 700; color: #7e9c91; }
+.eyebrow { display: flex; align-items: center; gap: 13px; color: #b4c9bf; }
+.eyebrow-line { width: 33px; height: 1px; background: #8db7a3; }
+h1, h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 500; letter-spacing: -1.8px; }
+.hero h1 { font-size: clamp(56px, 6.6vw, 91px); line-height: 1.04; margin: 29px 0 24px; }
+.hero h1 em, h2 em { color: #9bc9b2; font-weight: 500; }
+.hero-copy { font-size: 15px; line-height: 1.9; color: #c4d1cb; max-width: 470px; }
+.hero-actions { display: flex; align-items: center; gap: 28px; margin-top: 34px; }
+.button {
+  border: 0; padding: 17px 22px; font-size: 12px; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: space-between; transition: transform .2s;
+}
+.button:hover { transform: translateY(-3px); }
+.button-light { background: #f5f5ed; color: var(--deep); min-width: 190px; }
+.text-link { font-size: 12px; color: #d7e2dc; }
+.hero-note { font-size: 10px; color: #a6bbb1; margin-top: 64px; }
+.note-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #9bc9b2; margin-right: 9px; }
+.hero-art { height: 410px; position: relative; display: grid; place-items: center; }
+.art-orbit { position: absolute; border: 1px solid rgba(177,211,193,.23); border-radius: 50%; width: 390px; height: 390px; }
+.orbit-two { width: 475px; height: 475px; border-color: rgba(177,211,193,.12); }
+.art-card {
+  width: 270px; height: 330px; background: #dce9df; color: var(--deep); padding: 30px;
+  position: relative; box-shadow: 25px 25px 0 rgba(255,255,255,.035); transform: rotate(4deg);
+  display: flex; flex-direction: column;
+}
+.art-spark { font-size: 35px; color: var(--green); }
+.art-card-label { font-size: 8px; letter-spacing: 2px; margin-top: 22px; }
+.art-card strong { font-family: "Playfair Display", serif; font-size: 42px; line-height: 1.08; margin-top: 16px; font-weight: 500; }
+.art-card strong i { color: var(--green); }
+.art-card-bottom { font-size: 7px; letter-spacing: 1.5px; margin-top: auto; }
+.art-stamp {
+  position: absolute; right: 1%; bottom: 20px; border: 1px solid #a4c5b2; color: #c7dfd1;
+  border-radius: 50%; height: 92px; width: 92px; display: grid; place-items: center;
+  text-align: center; font-size: 9px; letter-spacing: 1.5px; transform: rotate(13deg);
+}
+.hero-bottom {
+  position: absolute; bottom: 25px; left: 7.2%; right: 7.2%; display: flex;
+  justify-content: space-between; color: #8da59a; font-size: 8px; letter-spacing: 1.7px;
+}
+.section-wrap { padding: 105px 9%; }
+.intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; align-items: end; margin-top: 30px; }
+h2 { font-size: clamp(43px, 5vw, 66px); line-height: 1.1; }
+.intro h2 em, .process-section h2 em, .contact-section h2 em { color: var(--green); }
+.intro-text { max-width: 490px; }
+.intro-text p, .section-heading p { font-size: 14px; line-height: 1.95; color: #64716d; }
+.under-link { display: inline-block; margin-top: 15px; font-size: 12px; font-weight: 700; border-bottom: 1px solid #93aa9f; padding-bottom: 10px; }
+.services-section { background: #142f2d; color: white; padding: 100px 0 110px; }
+.services-section .section-wrap { padding-top: 0; padding-bottom: 0; }
+.light-kicker { color: #91b6a4; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 35px; margin: 30px 0 55px; }
+.section-heading h2 { max-width: 590px; }
+.section-heading p { max-width: 350px; color: #b4c4bd; }
+.service-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid rgba(255,255,255,.2); border-left: 1px solid rgba(255,255,255,.2); }
+.service-card { min-height: 220px; padding: 25px 23px; border-right: 1px solid rgba(255,255,255,.2); border-bottom: 1px solid rgba(255,255,255,.2); transition: background .2s; }
+.service-card:hover { background: #1b3c38; }
+.service-top { display: flex; justify-content: space-between; color: #91b6a4; font-size: 10px; }
+.service-arrow { font-size: 17px; }
+.service-card h3 { font-family: "Playfair Display", serif; font-size: 21px; font-weight: 500; margin: 39px 0 10px; }
+.service-card p { font-size: 11px; line-height: 1.8; color: #b7c7c0; }
+.process-section { padding-top: 105px; padding-bottom: 110px; }
+.process-heading { margin-bottom: 48px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; border-top: 1px solid var(--line); padding-top: 28px; }
+.steps article > span { font-size: 10px; color: var(--green); letter-spacing: 1px; }
+.steps h3 { font-family: "Playfair Display", serif; font-weight: 500; font-size: 22px; margin: 30px 0 10px; }
+.steps p { font-size: 12px; line-height: 1.9; color: var(--muted); max-width: 300px; }
+.contact-section { padding-top: 105px; padding-bottom: 110px; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8%; margin-top: 35px; }
+.contact-details { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.contact-details span { display: block; font-size: 9px; letter-spacing: 2px; color: var(--green); margin-bottom: 10px; }
+.contact-details a, .contact-details p { font-size: 13px; line-height: 1.8; color: #465650; }
+.contact-details a:hover { color: var(--green); }
+.footer {
+  background: #0d2423; color: white; padding: 40px 7.2%; display: grid;
+  grid-template-columns: 1fr 1fr 1fr; align-items: center; gap: 20px;
+}
+.footer-brand .brand-mark { background: #dce9df; color: var(--deep); }
+.footer-brand small { color: #a5b8af; }
+.footer > p { font-size: 10px; color: #a9b9b1; }
+.footer-links { display: flex; gap: 18px; justify-content: flex-end; font-size: 10px; color: #c5d0ca; }
+.footer > small { grid-column: 1/-1; color: #81948b; font-size: 9px; border-top: 1px solid rgba(255,255,255,.13); padding-top: 20px; margin-top: 10px; }
+/* Cookie notice */
+.cookie-banner {
+  position: fixed; bottom: 20px; left: 20px; right: 20px; max-width: 650px; margin: auto;
+  background: white; padding: 20px; box-shadow: 0 8px 35px rgba(0,0,0,.18); z-index: 200; display: none;
+}
+.cookie-banner p { font-size: 12px; line-height: 1.7; color: var(--muted); margin: 8px 0 15px; }
+.cookie-actions { display: flex; gap: 10px; }
+.cookie-actions button { border: 0; padding: 10px 16px; cursor: pointer; font-size: 11px; }
+.accept-cookies { background: var(--deep); color: white; }
+.reject-cookies { background: #e8eee9; color: var(--ink); }
+@media(max-width:900px) {
+  .site-header { padding: 0 5%; }
+  .desktop-nav { gap: 17px; }
+  .hero { padding-left: 6%; padding-right: 6%; }
+  .hero-art { transform: scale(.85); }
+  .section-wrap { padding-left: 6%; padding-right: 6%; }
+  .service-grid { grid-template-columns: repeat(2,1fr); }
+}
+@media(max-width:650px) {
+  .site-header { min-height: 72px; }
+  .desktop-nav { display: none; }
+  .brand-mark { width: 37px; height: 37px; }
+  .header-contact { font-size: 10px; }
+  .hero { display: block; min-height: 700px; padding: 88px 7% 70px; }
+  .hero h1 { font-size: 58px; }
+  .hero-art { height: 310px; margin-top: 15px; transform: scale(.76); }
+  .art-orbit { width: 330px; height: 330px; }
+  .orbit-two { width: 390px; height: 390px; }
+  .hero-bottom { left: 7%; right: 7%; font-size: 7px; }
+  .hero-bottom span:nth-child(2) { display: none; }
+  .section-wrap { padding: 78px 7%; }
+  .intro-grid, .contact-grid { grid-template-columns: 1fr; }
+  .intro-grid { gap: 15px; }
+  .section-heading { display: block; }
+  .section-heading p { margin-top: 20px; }
+  .services-section { padding: 78px 0; }
+  .service-grid { grid-template-columns: 1fr 1fr; }
+  .service-card { min-height: 205px; padding: 18px 15px; }
+  .service-card h3 { font-size: 18px; margin-top: 31px; }
+  .service-card p { font-size: 10px; }
+  .steps { grid-template-columns: 1fr; gap: 20px; }
+  .steps article { border-bottom: 1px solid var(--line); padding-bottom: 15px; }
+  .steps h3 { margin-top: 15px; }
+  .contact-details { margin-top: 25px; gap: 20px; }
+  .footer { grid-template-columns: 1fr; gap: 12px; padding: 35px 7%; }
+  .footer-links { justify-content: flex-start; flex-wrap: wrap; }
+  .footer > small { grid-column: auto; }
+  .hero-note { margin-top: 38px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="MOLS Cleaning Services home">
+    <span class="brand-mark">M</span>
+    <span><strong>MOLS</strong><small>CLEANING SERVICES</small></span>
+  </a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a>
+    <a href="#process">How it works</a><a href="#contact">Contact</a>
+  </nav>
+  <a class="header-contact" href="tel:+447364113016">Call us ↗</a>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow"><span class="eyebrow-line"></span>BOURNEMOUTH &amp; SURROUNDING AREAS</div>
+    <h1>A cleaner space.<br><em>A clearer mind.</em></h1>
+    <p class="hero-copy">Thoughtful, dependable cleaning for homes, workplaces and the spaces people welcome others into.</p>
+    <div class="hero-actions">
+      <a class="button button-light" href="#contact">Contact our team ↗</a>
+      <a class="text-link" href="#services">Explore our services ↓</a>
+    </div>
+    <div class="hero-note"><span class="note-dot"></span>Cleaning support shaped around your space and schedule.</div>
+  </div>
+  <div class="hero-art">
+    <div class="art-orbit"></div><div class="art-orbit orbit-two"></div>
+    <div class="art-card">
+      <span class="art-spark">✳</span><span class="art-card-label">THE MOLS STANDARD</span>
+      <strong>Freshness<br>in every<br><i>detail.</i></strong>
+      <span class="art-card-bottom">CARE · DETAIL · CONSISTENCY</span>
+    </div>
+    <div class="art-stamp">A FRESH<br>START</div>
+  </div>
+  <div class="hero-bottom"><span>01 / 04</span><span>RESIDENTIAL · COMMERCIAL · SPECIALIST</span><span>SCROLL TO DISCOVER ↓</span></div>
+</section>
+<section class="intro section-wrap" id="about">
+  <div class="section-kicker">01 — A BETTER KIND OF CLEAN</div>
+  <div class="intro-grid">
+    <h2>We make clean<br>feel <em>effortless.</em></h2>
+    <div class="intro-text">
+      <p>MOLS Cleaning Services provides cleaning support for the places that matter to you. From everyday home cleaning to detailed property and commercial cleans, we focus on clear communication, care and attention to detail.</p>
+      <a class="under-link" href="#contact">Get in touch with us ↗</a>
+    </div>
+  </div>
+</section>
+<section class="services-section" id="services">
+  <div class="section-wrap">
+    <div class="section-kicker light-kicker">02 — WHAT WE DO</div>
+    <div class="section-heading">
+      <h2>One trusted team.<br><em>Many ways to help.</em></h2>
+      <p>Cleaning services for residential properties, workplaces and specialist cleaning requirements. Contact us to discuss the service you need.</p>
+    </div>
+    <div class="service-grid">
+      <article class="service-card"><div class="service-top"><span>01</span><span class="service-arrow">↗</span></div><h3>Residential Cleaning</h3><p>Regular home cleaning designed around your household, schedule and priorities.</p></article>
+      <article class="service-card"><div class="service-top"><span>02</span><span class="service-arrow">↗</span></div><h3>Office Cleaning</h3><p>A tidy, welcoming workplace with cleaning arranged to suit your business.</p></article>
+      <article class="service-card"><div class="service-top"><span>03</span><span class="service-arrow">↗</span></div><h3>Pub &amp; Commercial Cleaning</h3><p>Practical cleaning support for pubs and customer-facing commercial spaces.</p></article>
+      <article class="service-card"><div class="service-top"><span>04</span><span class="service-arrow">↗</span></div><h3>Airbnb &amp; Holiday Lets</h3><p>Turnover cleaning to help prepare your property between guest stays.</p></article>
+      <article class="service-card"><div class="service-top"><span>05</span><span class="service-arrow">↗</span></div><h3>HMO Cleaning</h3><p>Cleaning for shared homes and communal areas, with scope agreed in advance.</p></article>
+      <article class="service-card"><div class="service-top"><span>06</span><span class="service-arrow">↗</span></div><h3>End-of-Tenancy Cleaning</h3><p>A detailed clean when a tenancy comes to an end or a property changes hands.</p></article>
+      <article class="service-card"><div class="service-top"><span>07</span><span class="service-arrow">↗</span></div><h3>Deep Cleaning</h3><p>A more intensive clean focused on the areas that need extra attention.</p></article>
+      <article class="service-card"><div class="service-top"><span>08</span><span class="service-arrow">↗</span></div><h3>Oven Cleaning</h3><p>Focused cleaning for ovens and cooking appliances.</p></article>
+    </div>
+  </div>
+</section>
+<section class="process-section section-wrap" id="process">
+  <div class="section-kicker">03 — SIMPLE FROM THE START</div>
+  <div class="section-heading process-heading">
+    <h2>Getting started<br>is <em>straightforward.</em></h2>
+    <p>We keep communication clear, so you know what happens next.</p>
+  </div>
+  <div class="steps">
+    <article><span>01</span><h3>Contact our team</h3><p>Call, email or message us on WhatsApp to explain the cleaning service you need.</p></article>
+    <article><span>02</span><h3>Discuss your requirements</h3><p>We will discuss your property, cleaning requirements and preferred arrangements.</p></article>
+    <article><span>03</span><h3>Agree the details</h3><p>We can discuss the scope, availability and price before any work is arranged.</p></article>
+  </div>
+</section>
+<section class="contact-section section-wrap" id="contact">
+  <div class="section-kicker">04 — HERE WHEN YOU NEED US</div>
+  <div class="contact-grid">
+    <div><h2>Let's make<br>your space <em>shine.</em></h2></div>
+    <div class="contact-details">
+      <div><span>PHONE</span><a href="tel:+447364113016">07364 113016</a></div>
+      <div><span>EMAIL</span><a href="mailto:molcleaningservicesbmth@gmail.com">molcleaningservicesbmth@gmail.com</a></div>
+      <div><span>ADDRESS</span><p>1080 Christchurch Road<br>Bournemouth, BH7 6DS<br>England</p></div>
+      <div><span>WHATSAPP</span><a href="https://wa.me/447364113016" target="_blank" rel="noopener noreferrer">Message our team ↗</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <a class="brand footer-brand" href="#home"><span class="brand-mark">M</span><span><strong>MOLS</strong><small>CLEANING SERVICES</small></span></a>
+  <p>Professional cleaning in Bournemouth and surrounding areas.</p>
+  <div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <small>© <span id="year"></span> MOLS Cleaning Services. All rights reserved.</small>
+</footer>
+<div class="cookie-banner" id="cookieBanner">
+  <strong>Cookie notice</strong>
+  <p>This website uses essential browser storage to remember your cookie preference. External services, such as Google Fonts, may also process connection information.</p>
+  <div class="cookie-actions">
+    <button class="accept-cookies" id="acceptCookies">Accept</button>
+    <button class="reject-cookies" id="rejectCookies">Close</button>
+  </div>
+</div>
+<script>
+/* Current year */
+document.getElementById("year").textContent = new Date().getFullYear();
+/* Cookie notice */
+const cookieBanner = document.getElementById("cookieBanner");
+try {
+  if (!localStorage.getItem("molsCookieNotice")) {
+    cookieBanner.style.display = "block";
+  }
+  document.getElementById("acceptCookies").addEventListener("click", function() {
+    localStorage.setItem("molsCookieNotice", "accepted");
+    cookieBanner.style.display = "none";
+  });
+  document.getElementById("rejectCookies").addEventListener("click", function() {
+    localStorage.setItem("molsCookieNotice", "closed");
+    cookieBanner.style.display = "none";
+  });
+} catch (error) {
+  cookieBanner.style.display = "block";
+}
+</script>
+</body>
+</html>
